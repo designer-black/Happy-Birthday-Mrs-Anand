@@ -4,14 +4,21 @@ body {
     align-items: center;
     justify-content: center;
   
-    background-size: 1000px;
+    background-size: cover; background-repeat: no-repeat;
+    background-image: url(./images/img-1.jpg);
+    background-position: center center;
+  }
+
+  body:before {
+    content: ""; position: absolute; top: 0; right: 0; left: 0; bottom: 0;
+    background-size: cover; mix-blend-mode: multiply;
     background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
     background-position: center center;
   }
   
   .paper {
     background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
-    background-size: 500px;
+    background-size: contain;
     background-position: center center;
     padding: 20px 100px;
     /*  min-width: 800px; */
